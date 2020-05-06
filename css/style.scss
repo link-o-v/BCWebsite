@@ -1,0 +1,488 @@
+$lblue:#C6D1D7;
+$blue:#266089;
+$green:#329470;
+$font: 'Rhodium Libre',
+serif;
+
+/* 100px=7% */
+
+@mixin main-flex () {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: $font;
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/desktop.png) no-repeat center top;
+    background-size: cover;
+    width: 100%;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none
+}
+
+/* .container{
+	display: flex;
+	justify-content: center;
+}
+ */
+
+.mob-menu {
+
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $lblue;
+    background-color: rgba(198, 209, 215, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+
+    a {
+        padding: 1% 5%;
+        text-decoration: none;
+        color: $green;
+        font-size: 2em;
+        font-weight: bold;
+        display: block;
+        transition: 0.3s;
+    }
+
+
+
+    .closebtn {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 60px;
+    }
+}
+
+
+.mob-menu__content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 20%;
+
+    /* position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; */
+
+}
+
+header {
+    margin: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .header__burger {
+        display: none;
+
+    }
+
+
+    /* .header__mob-menu__content {
+        display: none;
+        z-index: 1;
+        background-color: $lblue;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    
+        a {
+            color: $green;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+    
+    } */
+
+
+
+    .header__title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .header__logo {
+        background: url(../img/logo.svg);
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+
+    }
+
+    h1 {
+
+        margin: 0 0 0 20px;
+        color: $green;
+        // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        font-size: 2em;
+
+    }
+
+    .header__lang {
+
+        color: $blue;
+        font-size: 1.5em;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    li:nth-child(odd) {
+        cursor: pointer;
+        user-select: none;
+
+        &:hover {
+            color: darken($blue, 7%)
+        }
+    }
+
+}
+
+.header__p {
+
+    color: $blue;
+    font-size: 1em;
+    margin-left: 17%;
+    margin-bottom: 100px;
+
+}
+
+
+main {
+    max-width: 1240px;
+    margin: 0 7%;
+
+    .main__mob {
+        display: none;
+
+    }
+
+    .main__container {
+        max-width: 1100px;
+
+    }
+
+    h2 {
+        color: $green;
+        font-size: 1.5em;
+        margin: 32px 0;
+    }
+
+    .main__text {
+        color: $green;
+        font-size: 1.15em;
+        margin-left: 32px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .main__logo {
+        width: 100px;
+        height: 100px;
+        margin: 32px 32px 32px 140px;
+    }
+
+    .about__ava {
+
+        background: url(../img/user.png) no-repeat;
+        background-size: contain;
+        width: 300px;
+
+
+    }
+
+    .skills__html__logo {
+        background: url(../img/html5-bl.png) no-repeat;
+        background-size: contain;
+
+
+
+    }
+
+    .skills__css__logo {
+        background: url(../img/css3-bl.png) no-repeat;
+        background-size: contain;
+
+
+    }
+
+    .skills__js__logo {
+        background: url(../img/js-square-bl.png) no-repeat;
+        background-size: contain;
+
+    }
+
+    .skills__sass__logo {
+        background: url(../img/sass-bl.png) no-repeat;
+        background-size: contain;
+
+    }
+
+    .works {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 32px 0 32px 140px;
+        align-content: space-around;
+
+    }
+
+    /*  .works-1,
+   .works-2,
+   .works-3 {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   } */
+
+    .work-1 {
+        background: url(../img/works/1.png) no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 800px;
+        margin-bottom: 32px;
+
+    }
+
+    .work-2 {
+        background: url(../img/works/2.png) no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 170px;
+        margin-bottom: 32px;
+    }
+
+    .work-3 {
+        background: url(../img/works/3.png) no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 170px;
+        margin-bottom: 32px;
+    }
+
+    .work-4 {
+        background: url(../img/works/4.png) no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 800px;
+        margin-bottom: 32px;
+    }
+
+    .work-5 {
+        background: url(../img/works/5.png) no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 800px;
+        margin-bottom: 32px;
+    }
+
+    .work-6 {
+        background: url(../img/works/6.png) no-repeat;
+        background-size: cover;
+        height: 350px;
+        width: 170px;
+        margin-bottom: 32px;
+
+
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 7%;
+
+
+    .footer__button {
+        border: 0;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 1.5em;
+        color: $green;
+        margin-top: 5%;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+    }
+
+
+    .footer__mob-envelope {
+        display: none;
+    }
+
+    .footer__envelope {
+        width: 82px;
+        height: 62px;
+        background: url(../img/envelope-solid-Bl.png);
+        background-size: cover;
+
+
+    }
+
+    .footer__popup {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+
+        overflow: auto; //Enable scroll if needed
+        background-color: rgb(0, 0, 0); // Fallback color
+        background-color: rgba(0, 0, 0, 0.4); // Black w/ opacity
+        padding-top: 60px;
+    }
+
+    .footer__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7%;
+        background-color: $lblue;
+        color: $green;
+        margin: 5% auto 15% auto;
+        /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+
+
+        .close-btn {
+            align-self: flex-end;
+            color: $blue;
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: -30px;
+
+            &:hover,
+            &:focus {
+                color: $green;
+                cursor: pointer;
+            }
+        }
+
+        .footer__form__container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-around;
+
+        }
+
+        textarea {
+            width: 100%;
+            height: 50%;
+        }
+
+        .send-button {
+            background-color: $blue;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 1em;
+            cursor: pointer;
+
+        }
+    }
+
+
+    /*  .footer__envelope {
+       background: url(../img/envelope-solid-Bl.png);
+       background-size: cover;
+       width: 82px;
+       height: 62px;
+       cursor: pointer;
+   }
+   
+   
+   .footer__contact {
+       font-size: 1.5em;
+       color: $green;
+   
+   } */
+}
+
+.about-me,
+.skills__html,
+.skills__css,
+.skills__js,
+.skills__sass {
+    @include main-flex ();
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}

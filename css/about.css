@@ -1,0 +1,15 @@
+main .about {
+  flex-direction: column; }
+  main .about .main__mob {
+    display: none; }
+  main .about h2 {
+    align-self: flex-start; }
+  main .about .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: spase-between; }
+    main .about .about-me div {
+      margin: 0;
+      padding: 5% 0; }
+
+/*# sourceMappingURL=about.css.map */

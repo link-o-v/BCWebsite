@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My business card website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+</head>
+
+<body>
+    <div id="myNav" class="mob-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="mob-menu__content">
+            <a href="about.html">About me</a>
+            <a href="skills.html">My skills</a>
+            <a href="">My works</a>
+            <a href="contact.html">Contact me</a>
+        </div>
+    </div>
+    <header>
+        <div class="header__title">
+            <a href="index.html">
+                <div class="header__logo"></div>
+                <h1>My business card website</h1>
+            </a>
+        </div>
+        <div class="header__lang">
+            <ul>
+                <li>RU</li>
+                <li>|</li>
+                <li>EN</li>
+            </ul>
+        </div>
+        <div class="header__burger" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <p class="header__p">I will always be glad to cooperate with you</p>
+    <main>
+        <section class="my-works">
+            <div class="main__mob"></div>
+            <h2>My works</h2>
+            <div class="main__container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/works/mob/Screenshot_1.png">
+                    <div class="main__text">
+                        Work examples
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/works/mob/w2.png">
+                    <div class="main__text">
+                        Work examples
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/works/mob/Screenshot_2.png">
+                    <div class="main__text">
+                        Work examples
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/works/mob/w4.png">
+                    <div class="main__text">
+                        Work examples
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/works/mob/Screenshot_3.png">
+                    <div class="main__text">
+                        Work examples
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/works/mob/Screenshot_4.png">
+                    <div class="main__text">
+                        Work examples
+                    </div>
+                </div>
+                <!-- Next and previous buttons -->
+            </div>
+            <br>
+            <div class="slide-buttons">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button class="footer__button" onclick="document.getElementById('popup').style.display='block'" style="width:auto;">
+            <div class="footer__mob-envelope"></div>
+            <div class="footer__envelope"></div>
+            <p>Contact me</p>
+        </button>
+        <div id="popup" class="footer__popup">
+            <form class="footer__contact animate">
+                <span onclick="document.getElementById('popup').style.display='none'" class="close-btn" title="Close window">×</span>
+                <h1>Contact me</h1>
+                <div class="footer__form__container">
+                    <p>Message</p>
+                    <textarea rows="10" placeholder="Type message..."></textarea><br>
+                    <button class="send-button">Send</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="footer__envelope"></div>
+        <div class="footer__contact">Contact me</div> -->
+    </footer>
+    <script src="js/common.js"></script>
+    <script src="js/mob-menu.js"></script>
+    <script src="js/slides.js"></script>
+</body>
+
+</html>
