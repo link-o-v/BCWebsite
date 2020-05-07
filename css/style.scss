@@ -45,8 +45,8 @@ a {
 }
 
 /* .container{
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
  */
 
@@ -339,6 +339,7 @@ footer {
         font-size: 1.5em;
         color: $green;
         margin-top: 5%;
+        outline: none;
 
         &:hover {
             opacity: 0.8;
@@ -432,6 +433,7 @@ footer {
             padding: 10px 0;
             font-size: 1em;
             cursor: pointer;
+            outline: none;
 
         }
     }

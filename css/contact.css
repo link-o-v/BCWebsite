@@ -17,6 +17,7 @@ main .main__contact {
     align-self: center;
     padding: 10px 0;
     font-size: 1em;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
 
 /*# sourceMappingURL=contact.css.map */
