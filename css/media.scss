@@ -84,6 +84,10 @@ $blue:#266089;
         .skills,
         .my-works {
             display: flex;
+            a{
+            	display: flex;
+            	flex-direction: row;
+            }
 
         }
 

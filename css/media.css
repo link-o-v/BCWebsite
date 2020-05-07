@@ -55,6 +55,11 @@
   main .skills,
   main .my-works {
     display: flex; }
+    main .about a,
+    main .skills a,
+    main .my-works a {
+      display: flex;
+      flex-direction: row; }
   main h2 {
     margin: 32px 0;
     align-self: flex-end; }
