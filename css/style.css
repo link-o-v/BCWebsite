@@ -5,7 +5,7 @@
 html {
   width: 100%;
   height: 100%;
-  font-family: "Rhodium Libre", serif;
+  font-family: "Rhodium Libre", "Comfortaa", serif;
   font-size: 24px; }
 
 body {
@@ -97,7 +97,7 @@ header {
     justify-content: flex-start;
     align-items: flex-end; }
   header .header__logo {
-    background: url(../img/logo.svg);
+    background: url(../img/logo.png);
     background-size: cover;
     width: 120px;
     height: 120px; }
@@ -110,11 +110,12 @@ header {
     font-size: 1.5em; }
   header li {
     display: inline-block; }
-  header li:nth-child(odd) {
-    cursor: pointer;
+  header li {
     user-select: none; }
-    header li:nth-child(odd):hover {
-      color: #1e4c6d; }
+    header li a:visited {
+      color: #266089; }
+    header li a {
+      color: #1e4c6d !important; }
 
 .header__p {
   color: #266089;
@@ -132,6 +133,8 @@ main {
     flex-direction: row;
     justify-content: space-between;
 } */ }
+  main a {
+    cursor: default; }
   main .main__mob {
     display: none; }
   main .main__container {

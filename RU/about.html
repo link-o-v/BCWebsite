@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="веб дизайн, верстка, веб сайт, создать веб сайт">
+    <title>Мой сайт-визитка</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="../favicon.ico">
+    
+</head>
+
+<body>
+    <div id="myNav" class="mob-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="mob-menu__content">
+            <a href="about.html">Обо мне</a>
+            <a href="skills.html">Мои навыки</a>
+            <a href="works.html">Примеры моих работ</a>
+            <a href="contact.html">Связаться со мной</a>
+        </div>
+    </div>
+    <header>
+        <div class="header__title">
+            <a href="index.html">
+                <div class="header__logo"></div>
+                <h1>Мой сайт-визитка</h1>
+            </a>
+        </div>
+        <div class="header__lang">
+            <ul>
+                <li>RU</li>
+                <li>|</li>
+                <li><a href="../about.html">EN</a></li>
+            </ul>
+        </div>
+        <div class="header__burger" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <p class="header__p">С нетерпением жду сотрудничества с вами</p>
+    <main>
+        <section class="about">
+            <div class="main__mob"></div>
+            <h2>Обо мне</h2>
+            <div class="about-me main__container">
+                <div class="about__ava main__logo"></div>
+                <div class="about__text main__text">
+                    Здравствуйте! Я креативный frontend разработчик в поиске интерестных проектов. Я создам для вас наилучший веб-сайт! Готова сотрудничать на условиях фриланса и уже с нетерпением жду нашего сотрудничества!
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button class="footer__button" onclick="document.getElementById('popup').style.display='block'" style="width:auto;">
+            <div class="footer__mob-envelope"></div>
+            <div class="footer__envelope"></div>
+            <p>Связаться со мной</p>
+        </button>
+        <div id="popup" class="footer__popup">
+            <form class="footer__contact animate" action="mailto:linko8537@gmail.com?subject=" Message from BCWebsite" method="post" enctype="text/plain">
+                <span onclick="document.getElementById('popup').style.display='none'" class="close-btn" title="Close window">×</span>
+                <h1>Связаться со мной</h1>
+                <div class="footer__form__container">
+                    <p>Сообщение</p>
+                    <textarea name="message" rows="10" placeholder="Написать сообщение..."></textarea><br>
+                    <button class="send-button" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="footer__envelope"></div>
+        <div class="footer__contact">Contact me</div> -->
+    </footer>
+    <script src="../js/common.js"></script>
+    <script src="../js/mob-menu.js"></script>
+</body>
+
+</html>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="webdesign, web developer, website, logo design, website builder">
     <title>My business card website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -28,7 +29,7 @@
         </div>
         <div class="header__lang">
             <ul>
-                <li>RU</li>
+                <li><a href="RU/index.html">RU</a></li>
                 <li>|</li>
                 <li>EN</li>
             </ul>
@@ -110,13 +111,13 @@
             <p>Contact me</p>
         </button>
         <div id="popup" class="footer__popup">
-            <form class="footer__contact animate">
+            <form class="footer__contact animate" action="mailto:linko8537@gmail.com?subject=" Message from BCWebsite" method="post" enctype="text/plain">
                 <span onclick="document.getElementById('popup').style.display='none'" class="close-btn" title="Close window">×</span>
                 <h1>Contact me</h1>
                 <div class="footer__form__container">
                     <p>Message</p>
-                    <textarea rows="10" placeholder="Type message..."></textarea><br>
-                    <button class="send-button">Send</button>
+                    <textarea name="message" rows="10" placeholder="Type message..."></textarea><br>
+                    <button class="send-button" type="submit">Send</button>
                 </div>
             </form>
         </div>

@@ -7,6 +7,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
 /*function myFunction(x) {
     x.classList.toggle("change");
 }*/
