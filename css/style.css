@@ -150,12 +150,12 @@ main {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5); }
   main .main__logo {
     width: 100px;
-    height: 100px;
+    height: 200px;
     margin: 32px 32px 32px 140px; }
   main .about__ava {
-    background: url(../img/user.png) no-repeat;
+    background: url(../img/ava.png) no-repeat;
     background-size: contain;
-    width: 300px; }
+    width: 450px; }
   main .skills__html__logo {
     background: url(../img/html5-bl.png) no-repeat;
     background-size: contain; }
